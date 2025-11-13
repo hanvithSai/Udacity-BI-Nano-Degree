@@ -1,0 +1,12 @@
+Other repositories
+
+https://www.databricks.com/training/catalog
+
+https://www.labplatform.vmware.com/HOL/catalog
+
+https://learn.microsoft.com/en-us/training/browse/
+
+https://www.cloudskillsboost.google/catalog
+
+https://www.aws.training/learninglibrary
+

@@ -1,0 +1,22 @@
+[
+    {
+        "keyPrefix": "s3://<Bucket>/Data/Security/",
+        "aclEntries": [
+            {
+                "Name": "Approved_Coaches",
+                "Type": "GROUP",
+                "Access": "ALLOW"
+            }
+        ]
+    },
+        {
+        "keyPrefix": "s3://<Bucket>/Data/Medicine/",
+        "aclEntries": [
+            {
+                "Name": "UnApproved_Coaches",
+                "Type": "GROUP",
+                "Access": "DENY"
+            }
+        ]
+    }
+]
