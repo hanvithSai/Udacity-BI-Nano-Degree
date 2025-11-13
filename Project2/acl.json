@@ -1,0 +1,18 @@
+{
+  "access_control": [
+    {
+      "principals": ["career.coach.one"],
+      "allow": ["S3_OBJECT", "metadata", "document"],
+      "paths": [
+        "Restricted1.pdf"
+      ]
+    },
+    {
+      "principals": ["career.coach.two"],
+      "allow": ["S3_OBJECT", "metadata", "document"],
+      "paths": [
+        "Restricted2.pdf"
+      ]
+    }
+  ]
+}
