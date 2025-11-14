@@ -1,18 +1,53 @@
-{
-  "access_control": [
+[
+
     {
-      "principals": ["career.coach.one"],
-      "allow": ["S3_OBJECT", "metadata", "document"],
-      "paths": [
-        "Restricted1.pdf"
-      ]
+
+        "keyPrefix": "s3://career4all-course-catalog-han/Security/",
+
+        "aclEntries": [
+
+            {
+
+                "Name": "CareerCoaches",
+
+                "Type": "GROUP",
+
+                "Access": "ALLOW"
+
+            }
+
+        ]
+
     },
+
     {
-      "principals": ["career.coach.two"],
-      "allow": ["S3_OBJECT", "metadata", "document"],
-      "paths": [
-        "Restricted2.pdf"
-      ]
+
+        "keyPrefix": "s3://career4all-course-catalog-han/Medicine/",
+
+        "aclEntries": [
+
+            {
+
+                "Name": "career.coach.one",
+
+                "Type": "USER",
+
+                "Access": "DENY"
+
+            },
+
+	{
+
+                "Name": "career.coach.two",
+
+                "Type": "USER",
+
+                "Access": "ALLOW"
+
+            }
+
+        ]
+
     }
-  ]
-}
+
+]
